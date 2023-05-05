@@ -33,8 +33,6 @@ const arraySugestoes = [
 
 
 
-
-
 export function Suggest(){
     return (
         <div class="sugestoes">
