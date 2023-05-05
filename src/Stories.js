@@ -54,7 +54,7 @@ export function Stories(){
             {arrayStories.map(story =>
               <div class="story">
               <div class="imagem">
-                <img src={story.src} alt={story.alt}/>
+                <img src={story.src} alt={story.usuario}/>
               </div>
               <div class="usuario">
                 {story.usuario} 

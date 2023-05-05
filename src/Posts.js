@@ -1,10 +1,81 @@
+const objPost = [
+  {
+    srcUserLogo: "assets/img/meowed.svg",
+    nameUser: "meowed",
 
+    srcConteudo:"assets/img/gato-telefone.svg"
+  },
+  {
+    srcUserLogo: "assets/img/barked.svg",
+    nameUser: "barked",
+
+    srcConteudo:"assets/img/dog.svg"
+  },
+  {
+    srcUserLogo: "assets/img/meowed.svg",
+    nameUser: "meowed",
+
+    srcConteudo:"assets/img/gato-telefone.svg"
+  }
+]
 
 
 
 export function Posts(){
-    return(
+    
+  const curtidas = 10;
+  
+  return(
+
         <div class="posts">
+
+            {objPost.map(post =>
+              
+              <div class="post">
+              <div class="topo">
+                <div class="usuario">
+                  <img src={post.srcUserLogo} alt={post.nameUser}/>
+                  {post.nameUser}
+                </div>
+                <div class="acoes">
+                  <ion-icon name="ellipsis-horizontal"></ion-icon>
+                </div>
+              </div>
+  
+              <div class="conteudo">
+                <img src={post.srcConteudo} alt="gato-telefone"/>
+              </div>
+  
+              <div class="fundo">
+                <div class="acoes">
+                  <div>
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <ion-icon name="paper-plane-outline"></ion-icon>
+                  </div>
+                  <div>
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                  </div>
+                </div>
+  
+                <div class="curtidas">
+                  <img src="assets/img/respondeai.svg" alt="respondeai"/>
+                  <div class="texto">
+                    Curtido por <strong>respondeai</strong> e <strong>outras {curtidas} pessoas</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+              
+              )}
+
+          </div>
+    );
+}
+
+/*
+
             <div class="post">
               <div class="topo">
                 <div class="usuario">
@@ -77,7 +148,6 @@ export function Posts(){
               </div>
             </div>
 
-
             <div class="post">
               <div class="topo">
                 <div class="usuario">
@@ -113,7 +183,4 @@ export function Posts(){
                 </div>
               </div>
             </div>
-        
-          </div>
-    );
-}
+         */
