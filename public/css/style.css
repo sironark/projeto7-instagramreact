@@ -176,6 +176,10 @@ body {
   cursor: pointer;
 }
 
+.none{
+  display: none;
+}
+
 .post .conteudo img {
   width: 100%;
 }
