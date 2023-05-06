@@ -41,7 +41,7 @@ export default function Post(post){
         
         <div class="post" data-test="post">
         <div class="topo">
-          <div class="usuario"data-test="name">
+          <div class="usuario">
             <img  src={post.srcUserLogo} alt={post.nameUser}/>
             {post.nameUser}
           </div>
