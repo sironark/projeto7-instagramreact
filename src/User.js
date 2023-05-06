@@ -31,11 +31,11 @@ export function User(){
 
     return(
         <div class="usuario">
-        <img src={imagemUsuario} alt="imagem de perfil" onClick={promptImagem}/>
-        <div class="texto">
-          <span>
-            <strong>{nomeUser}</strong>
-            <ion-icon name="pencil" onClick={promptUsuario}></ion-icon>
+        <img data-test="profile-image" src={imagemUsuario} alt="imagem de perfil" onClick={promptImagem}/>
+        <div class="texto" >
+          <span >
+            <strong data-test="name">{nomeUser}</strong>
+            <ion-icon name="pencil" onClick={promptUsuario} data-test="edit-name"></ion-icon>
           </span>
         </div>
       </div>
