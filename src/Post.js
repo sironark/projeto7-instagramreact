@@ -51,7 +51,7 @@ export default function Post(post){
         </div>
 
         <div class="conteudo">
-          <img data-test="post-image" onClick={curtirPelaFoto} src={post.srcConteudo} alt="gato-telefone"/>
+          <img data-test="post-image" onDoubleClick={curtirPelaFoto} src={post.srcConteudo} alt="gato-telefone"/>
         </div>
 
         <div class="fundo">
